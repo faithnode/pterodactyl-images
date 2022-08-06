@@ -26,6 +26,15 @@
   - `ghcr.io/faithnode/pterodactyl-images:openj9-18`
 
 
+### Java FX
+- [Java FX 11](https://github.com/faithnode/pterodactyl-images/tree/main/javafx/11)
+  - `ghcr.io/faithnode/pterodactyl-images:javafx-11`
+- [Java FX 17](https://github.com/faithnode/pterodactyl-images/tree/main/javafx/17)
+  - `ghcr.io/faithnode/pterodactyl-images:javafx-17`
+- [Java FX 18](https://github.com/faithnode/pterodactyl-images/tree/main/javafx/18)
+  - `ghcr.io/faithnode/pterodactyl-images:javafx-18`
+
+
 ### GO
 
 - [Go 1.15](https://github.com/faithnode/pterodactyl-images/tree/main/go/1_15)

@@ -1,0 +1,43 @@
+name: build javafx
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 */10 * *"
+  push:
+    branches:
+      - main
+    paths:
+      - javafx/**
+
+
+jobs:
+  push:
+    name: "javafx-${{ matrix.tag }}"
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        tag:
+          - 11
+          - 17
+          - 18
+    steps:
+      - uses: actions/checkout@v3
+      - uses: docker/setup-qemu-action@v2
+      - uses: docker/setup-buildx-action@v2
+        with:
+          version: "v0.8.2"
+          buildkitd-flags: --debug
+      - uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.REGISTRY_TOKEN }}
+      - uses: docker/build-push-action@v3
+        with:
+          context: ./javafx
+          file: ./javafx/${{ matrix.tag }}/Dockerfile
+          platforms: linux/amd64, linux/arm64
+          push: true
+          tags: ghcr.io/faithnode/pterodactyl-images:javafx-${{ matrix.tag }}
