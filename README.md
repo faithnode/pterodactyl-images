@@ -15,6 +15,16 @@
 - [Java 19](https://github.com/faithnode/pterodactyl-images/tree/main/java/19)
   - `ghcr.io/faithnode/pterodactyl-images:java-19`
 
+### Java OpenJ9
+- [OpenJ9 8](https://github.com/faithnode/pterodactyl-images/tree/main/openj9/8)
+  - `ghcr.io/faithnode/pterodactyl-images:openj9-8`
+- [OpenJ9 11](https://github.com/faithnode/pterodactyl-images/tree/main/openj9/11)
+  - `ghcr.io/faithnode/pterodactyl-images:openj9-11`
+- [OpenJ9 17](https://github.com/faithnode/pterodactyl-images/tree/main/openj9/17)
+  - `ghcr.io/faithnode/pterodactyl-images:openj9-17`
+- [OpenJ9 18](https://github.com/faithnode/pterodactyl-images/tree/main/openj9/18)
+  - `ghcr.io/faithnode/pterodactyl-images:openj9-18`
+
 
 ### GO
 
