@@ -1,0 +1,1 @@
+ca-certificates iproute2 curl git unzip ffmpeg tzdata fontconfig locales dnsutils build-essential make gcc g++
