@@ -1,7 +1,7 @@
 FROM openjdk:18-slim
 
 RUN apt update \
- && apt -y install ca-certificates tzdata iproute2 unzip \
+ && apt -y install ca-certificates tzdata iproute2 unzip curl \
  && adduser -D -h /home/container container
 
 ENV JMODS_DIR=/usr/share/openjfx/jmods
