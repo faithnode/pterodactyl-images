@@ -15,6 +15,18 @@
 - [Java 19](https://github.com/faithnode/pterodactyl-images/tree/main/java/19)
   - `ghcr.io/faithnode/pterodactyl-images:java-19`
 
+### Java Eclipse Temurin
+- [Java 8](https://github.com/faithnode/pterodactyl-images/tree/main/java-eclipse-temurin/8)
+  - `ghcr.io/faithnode/pterodactyl-images:java-eclipse-temurin-8`
+- [Java 11](https://github.com/faithnode/pterodactyl-images/tree/main/java-eclipse-temurin/11)
+  - `ghcr.io/faithnode/pterodactyl-images:java-eclipse-temurin-11`
+- [Java 16](https://github.com/faithnode/pterodactyl-images/tree/main/java-eclipse-temurin/16)
+  - `ghcr.io/faithnode/pterodactyl-images:java-eclipse-temurin-16`
+- [Java 17](https://github.com/faithnode/pterodactyl-images/tree/main/java-eclipse-temurin/17)
+  - `ghcr.io/faithnode/pterodactyl-images:java-eclipse-temurin-17`
+- [Java 18](https://github.com/faithnode/pterodactyl-images/tree/main/java-eclipse-temurin/18)
+  - `ghcr.io/faithnode/pterodactyl-images:java-eclipse-temurin-18`
+
 ### Java OpenJ9
 - [OpenJ9 8](https://github.com/faithnode/pterodactyl-images/tree/main/openj9/8)
   - `ghcr.io/faithnode/pterodactyl-images:openj9-8`
