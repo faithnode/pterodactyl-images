@@ -103,3 +103,11 @@
   - `ghcr.io/faithnode/pterodactyl-images:ruby-3_1`
 - [Ruby 3.2](https://github.com/faithnode/pterodactyl-images/tree/main/ruby/3_2)
   - `ghcr.io/faithnode/pterodactyl-images:ruby-3_2`
+
+
+### Rust
+
+- [Rust 1](https://github.com/faithnode/pterodactyl-images/tree/main/rust/1)
+  - `ghcr.io/faithnode/pterodactyl-images:rust-1`
+- [Rust 1.63](https://github.com/faithnode/pterodactyl-images/tree/main/rust/1_63)
+  - `ghcr.io/faithnode/pterodactyl-images:rust-1_63`
