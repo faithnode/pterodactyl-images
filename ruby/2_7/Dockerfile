@@ -1,4 +1,4 @@
-FROM ruby:2.7.6-alpine
+FROM ruby:2.7.6-slim-bullseye
 
 RUN apt update \
  && apt -y install ca-certificates gcc g++ tzdata iproute2 \
