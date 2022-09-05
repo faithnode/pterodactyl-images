@@ -121,3 +121,17 @@
   - `ghcr.io/faithnode/pterodactyl-images:dotnet-5_0`
 - [.NET 6.0](https://github.com/faithnode/pterodactyl-images/tree/main/dotnet/6_0)
   - `ghcr.io/faithnode/pterodactyl-images:dotnet-6_0`
+
+
+### PHP
+
+- [PHP 5.6](https://github.com/faithnode/pterodactyl-images/tree/main/php/5_6)
+  - `ghcr.io/faithnode/pterodactyl-images:php-5_6`
+- [PHP 7.0](https://github.com/faithnode/pterodactyl-images/tree/main/php/7_0)
+  - `ghcr.io/faithnode/pterodactyl-images:php-7_0`
+- [PHP 7.4](https://github.com/faithnode/pterodactyl-images/tree/main/php/7_4)
+  - `ghcr.io/faithnode/pterodactyl-images:php-7_4`
+- [PHP 8.0](https://github.com/faithnode/pterodactyl-images/tree/main/php/8_0)
+  - `ghcr.io/faithnode/pterodactyl-images:php-8_0`
+- [PHP 8.1](https://github.com/faithnode/pterodactyl-images/tree/main/php/8_1)
+  - `ghcr.io/faithnode/pterodactyl-images:php-8_1`
