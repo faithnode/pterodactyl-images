@@ -111,3 +111,13 @@
   - `ghcr.io/faithnode/pterodactyl-images:rust-1`
 - [Rust 1.63](https://github.com/faithnode/pterodactyl-images/tree/main/rust/1_63)
   - `ghcr.io/faithnode/pterodactyl-images:rust-1_63`
+
+
+### .NET
+
+- [.NET 3.1](https://github.com/faithnode/pterodactyl-images/tree/main/dotnet/3_1)
+  - `ghcr.io/faithnode/pterodactyl-images:dotnet-3_1`
+- [.NET 5.0](https://github.com/faithnode/pterodactyl-images/tree/main/dotnet/5_0)
+  - `ghcr.io/faithnode/pterodactyl-images:dotnet-5_0`
+- [.NET 6.0](https://github.com/faithnode/pterodactyl-images/tree/main/dotnet/6_0)
+  - `ghcr.io/faithnode/pterodactyl-images:dotnet-6_0`
