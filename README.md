@@ -91,3 +91,15 @@
     - `ghcr.io/faithnode/pterodactyl-images:python-3_10`
 - [Python 3.11](https://github.com/faithnode/pterodactyl-images/tree/main/python/3_11)
     - `ghcr.io/faithnode/pterodactyl-images:python-3_11`
+
+
+### Ruby
+
+- [Ruby 2.7](https://github.com/faithnode/pterodactyl-images/tree/main/ruby/2_7)
+  - `ghcr.io/faithnode/pterodactyl-images:ruby-2_7`
+- [Ruby 3.0](https://github.com/faithnode/pterodactyl-images/tree/main/ruby/3_0)
+  - `ghcr.io/faithnode/pterodactyl-images:ruby-3_0`
+- [Ruby 3.1](https://github.com/faithnode/pterodactyl-images/tree/main/ruby/3_1)
+  - `ghcr.io/faithnode/pterodactyl-images:ruby-3_1`
+- [Ruby 3.2](https://github.com/faithnode/pterodactyl-images/tree/main/ruby/3_2)
+  - `ghcr.io/faithnode/pterodactyl-images:ruby-3_2`
