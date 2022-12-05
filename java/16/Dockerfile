@@ -1,7 +1,9 @@
 FROM openjdk:16-slim
 
+COPY ./../packages /packages
+
 RUN apt update
-RUN apt install -y ca-certificates tzdata iproute2 fontconfig
+RUN xargs apt install -y < /packages
 RUN adduser -D -h /home/container container
 
 USER        container

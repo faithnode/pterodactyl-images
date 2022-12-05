@@ -2,8 +2,6 @@ FROM openjdk:15-slim
 
 COPY ./../packages /packages
 
-COPY ./../packages /packages
-
 RUN apt update
 RUN xargs apt install -y < /packages
 RUN adduser -D -h /home/container container

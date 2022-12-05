@@ -1,8 +1,10 @@
 FROM python:3.11-rc-slim
 
-RUN apt update \
- && apt -y install ca-certificates gcc g++ tzdata iproute2 \
- && adduser -D -h /home/container container
+COPY ./../packages /packages
+
+RUN apt update
+RUN xargs apt install -y < /packages
+RUN adduser -D -h /home/container container
 
 RUN python -m pip install --upgrade pip
 

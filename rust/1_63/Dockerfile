@@ -1,8 +1,10 @@
 FROM rust:1.63-slim-bullseye
 
-RUN apt update \
- && apt -y install ca-certificates gcc g++ tzdata iproute2 \
- && adduser -D -h /home/container container
+COPY ./../packages /packages
+
+RUN apt update
+RUN xargs apt install -y < /packages
+RUN adduser -D -h /home/container container
 
 USER        container
 ENV         USER=container HOME=/home/container

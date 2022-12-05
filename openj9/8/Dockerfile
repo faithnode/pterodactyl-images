@@ -1,8 +1,10 @@
 FROM ibm-semeru-runtimes:open-8-jdk
 
-RUN apt update \
- && apt -y install ca-certificates tzdata iproute2 \
- && adduser -D -h /home/container container
+COPY ./../packages /packages
+
+RUN apt update
+RUN xargs apt install -y < /packages
+RUN adduser -D -h /home/container container
 
 USER        container
 ENV         USER=container HOME=/home/container
