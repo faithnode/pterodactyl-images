@@ -1,10 +1,9 @@
 FROM openjdk:8-slim
 
-
-
-RUN apt update \
- && apt -y install $PACKAGES \
- && adduser -D -h /home/container container
+RUN apt update
+RUN echo $PACKAGES
+RUN apt -y install $PACKAGES \
+RUN adduser -D -h /home/container container
 
 USER        container
 ENV         USER=container HOME=/home/container
