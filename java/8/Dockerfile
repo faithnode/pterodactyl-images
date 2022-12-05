@@ -1,10 +1,10 @@
 FROM openjdk:8-slim
 
 RUN apt update
-RUN echo $PACKAGES
-RUN echo 123456
-RUN apt -y install $PACKAGES
+RUN apt install -y ca-certificates tzdata iproute2 fontconfig unzip curl
 RUN adduser -D -h /home/container container
+RUN echo cat ./../../packages
+
 
 USER        container
 ENV         USER=container HOME=/home/container
