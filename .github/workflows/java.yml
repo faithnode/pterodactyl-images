@@ -14,6 +14,8 @@ on:
 jobs:
   push:
     name: "java-${{ matrix.tag }}"
+    env:
+      PACKAGES: 'ca-certificates tzdata iproute2 fontconfig'
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
