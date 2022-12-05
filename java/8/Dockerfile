@@ -1,5 +1,6 @@
 FROM openjdk:8-slim
 
+RUN ls /
 COPY ./../../packages /packages
 RUN echo 123
 RUN cat packages
