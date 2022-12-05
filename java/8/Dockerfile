@@ -1,7 +1,9 @@
 FROM openjdk:8-slim
 
+
+
 RUN apt update \
- && apt -y install ca-certificates tzdata iproute2 \
+ && apt -y install $PACKAGES \
  && adduser -D -h /home/container container
 
 USER        container
