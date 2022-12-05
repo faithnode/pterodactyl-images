@@ -1,7 +1,6 @@
 FROM openjdk:8-slim
 
-COPY ./../entrypoint.sh /entrypoint.sh
-RUN xargs echo < entrypoint.sh
+RUN xargs echo < ./../../packages
 
 RUN apt update
 RUN apt install -y ca-certificates tzdata iproute2 fontconfig unzip curl
