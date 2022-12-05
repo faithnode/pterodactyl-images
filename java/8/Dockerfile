@@ -1,6 +1,6 @@
 FROM openjdk:8-slim
 
-COPY ./../../packages /packages
+COPY ./../packages /packages
 RUN xargs echo < /packages
 
 RUN apt update
