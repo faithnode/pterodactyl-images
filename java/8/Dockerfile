@@ -1,10 +1,9 @@
 FROM openjdk:8-slim
 
 COPY ./../packages /packages
-RUN xargs echo < /packages
 
 RUN apt update
-RUN apt install -y ca-certificates tzdata iproute2 fontconfig unzip curl
+RUN xargs apt install -y < /packages
 RUN adduser -D -h /home/container container
 
 USER        container
