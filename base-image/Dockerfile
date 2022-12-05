@@ -1,4 +1,4 @@
-FROM scratch
+FROM debian:buster-slim
 
 RUN apt -y install ca-certificates
 RUN apt -y install tzdata
