@@ -6,8 +6,6 @@ RUN apt update
 RUN xargs apt install -y < /packages
 RUN adduser -D -h /home/container container
 
-RUN python -m pip install --upgrade pip
-
 USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
