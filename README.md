@@ -135,3 +135,12 @@
   - `ghcr.io/faithnode/pterodactyl-images:php-8_0`
 - [PHP 8.1](https://github.com/faithnode/pterodactyl-images/tree/main/php/8_1)
   - `ghcr.io/faithnode/pterodactyl-images:php-8_1`
+
+### Redis
+
+- [Redis 5](https://github.com/faithnode/pterodactyl-images/tree/main/redis/5)
+  - `ghcr.io/faithnode/pterodactyl-images:redis-5`
+- [Redis 6](https://github.com/faithnode/pterodactyl-images/tree/main/redis/6)
+  - `ghcr.io/faithnode/pterodactyl-images:redis-6`
+- [Redis 7](https://github.com/faithnode/pterodactyl-images/tree/main/redis/7)
+  - `ghcr.io/faithnode/pterodactyl-images:redis-7`
