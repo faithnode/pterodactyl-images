@@ -7,19 +7,12 @@ on:
       - master
     paths:
       - dotnet/**
-
-env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: dotnet
-
-permissions:
-  actions: read
-  packages: write
+  schedule:
+    - cron: "0 0 */10 * *"
 
 jobs:
-  push:
-    name: ${{ matrix.tag }}
-    runs-on: ubuntu-latest
+  build:
+    uses: ./.github/workflows/_build.yml
     strategy:
       fail-fast: false
       matrix:
@@ -27,25 +20,6 @@ jobs:
           - "3.1"
           - "5.0"
           - "6.0"
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup BuildX
-        uses: docker/setup-buildx-action@v2
-
-      - name: Login to ${{ env.REGISTRY }}
-        uses: docker/login-action@v2
-        with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Build and push image
-        uses: docker/build-push-action@v4
-        with:
-          context: ./${{ env.IMAGE_NAME }}
-          file: ./${{ env.IMAGE_NAME }}/${{ matrix.tag }}/Dockerfile
-          platforms: linux/amd64
-          push: true
-          tags: ${{ env.REGISTRY }}/faithnode/pterodactyl-images/${{ env.IMAGE_NAME }}:${{ matrix.tag }}
+    with:
+      tag: ${{ matrix.tag }}
+      name: dotnet
