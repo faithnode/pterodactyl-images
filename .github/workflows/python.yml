@@ -27,4 +27,4 @@ jobs:
           - "3.12"
     with:
       tag: ${{ matrix.tag }}
-      name: dotnet
+      name: python

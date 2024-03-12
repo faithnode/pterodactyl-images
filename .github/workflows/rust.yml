@@ -26,4 +26,4 @@ jobs:
           - "1.70"
     with:
       tag: ${{ matrix.tag }}
-      name: dotnet
+      name: rust

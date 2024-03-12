@@ -23,4 +23,4 @@ jobs:
           - "3.2"
     with:
       tag: ${{ matrix.tag }}
-      name: dotnet
+      name: ruby
