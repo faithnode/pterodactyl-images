@@ -8,7 +8,7 @@ on:
     paths:
       - python/**
   schedule:
-    - cron: "0 8 */10 * *"
+    - cron: "0 0 * * 0"
 
 jobs:
   build:

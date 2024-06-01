@@ -8,7 +8,7 @@ on:
     paths:
       - java-eclipse-temurin/**
   schedule:
-    - cron: "0 3 */10 * *"
+    - cron: "0 0 * * 0"
 
 jobs:
   build:

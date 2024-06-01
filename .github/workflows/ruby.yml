@@ -8,7 +8,7 @@ on:
     paths:
       - ruby/**
   schedule:
-    - cron: "0 9 */10 * *"
+    - cron: "0 0 * * 0"
 
 jobs:
   build:

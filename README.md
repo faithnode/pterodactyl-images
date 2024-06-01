@@ -116,6 +116,13 @@
 - [Node JS 21](https://github.com/faithnode/pterodactyl-images/tree/master/nodejs/21)
     - `ghcr.io/faithnode/pterodactyl-images/nodejs:21`
 
+### Bun
+
+- [Bun 1.0](https://github.com/faithnode/pterodactyl-images/tree/master/bun/1.0)
+    - `ghcr.io/faithnode/pterodactyl-images/bun:1.0`
+- [Bun 1.1](https://github.com/faithnode/pterodactyl-images/tree/master/bun/1.1)
+    - `ghcr.io/faithnode/pterodactyl-images/bun:1.1`
+
 ### Python
 
 - [Python 2.7](https://github.com/faithnode/pterodactyl-images/tree/master/python/2.7)

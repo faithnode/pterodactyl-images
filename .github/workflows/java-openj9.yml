@@ -8,7 +8,7 @@ on:
     paths:
       - java-openj9/**
   schedule:
-    - cron: "0 4 */10 * *"
+    - cron: "0 0 * * 0"
 
 jobs:
   build:
