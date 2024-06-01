@@ -1,0 +1,23 @@
+name: Build bun
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - bun/**
+  schedule:
+    - cron: "0 11 */10 * *"
+
+jobs:
+  build:
+    uses: ./.github/workflows/_build.yml
+    strategy:
+      fail-fast: false
+      matrix:
+        tag:
+          - "1.0"
+    with:
+      tag: ${{ matrix.tag }}
+      name: bun
