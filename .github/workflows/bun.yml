@@ -13,12 +13,5 @@ on:
 jobs:
   build:
     uses: ./.github/workflows/_build.yml
-    strategy:
-      fail-fast: false
-      matrix:
-        tag:
-          - "1.0"
-          - "1.1"
     with:
-      tag: ${{ matrix.tag }}
-      name: bun
+      image: bun

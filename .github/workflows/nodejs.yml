@@ -13,19 +13,5 @@ on:
 jobs:
   build:
     uses: ./.github/workflows/_build.yml
-    strategy:
-      fail-fast: false
-      matrix:
-        tag:
-          - "12"
-          - "14"
-          - "15"
-          - "16"
-          - "17"
-          - "18"
-          - "19"
-          - "20"
-          - "21"
     with:
-      tag: ${{ matrix.tag }}
-      name: nodejs
+      image: nodejs

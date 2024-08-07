@@ -15,4 +15,4 @@ STARTUP=$(echo -e "${STARTUP}" | sed -e 's/{{/${/g' -e 's/}}/}/g' | eval echo "$
 
 echo -e "${YELLOW}Executing command:${RESET} ${STARTUP}\n"
 
-eval "${STARTUP}"
+exec env ${STARTUP}
