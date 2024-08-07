@@ -13,20 +13,5 @@ on:
 jobs:
   build:
     uses: ./.github/workflows/_build.yml
-    strategy:
-      fail-fast: false
-      matrix:
-        tag:
-          - "8"
-          - "11"
-          - "15"
-          - "16"
-          - "17"
-          - "18"
-          - "19"
-          - "20"
-          - "21"
-          - "22"
     with:
-      tag: ${{ matrix.tag }}
-      name: java
+      image: java
