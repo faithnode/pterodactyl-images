@@ -20,6 +20,8 @@
     - `ghcr.io/faithnode/pterodactyl-images/java:21`
 - [Java 22](https://github.com/faithnode/pterodactyl-images/tree/master/java/22)
     - `ghcr.io/faithnode/pterodactyl-images/java:22`
+- [Java 23](https://github.com/faithnode/pterodactyl-images/tree/master/java/23)
+    - `ghcr.io/faithnode/pterodactyl-images/java:23`
 
 ### Java Eclipse Temurin
 
