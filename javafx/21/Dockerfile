@@ -10,7 +10,7 @@ RUN apt update
 RUN xargs apt install -y --no-install-recommends < /packages
 RUN adduser -D -h /home/container container
 
-ENV FX_VERSION=20.0.1
+ENV FX_VERSION=21.0.7
 ENV JMODS_DIR=/usr/share/openjfx/jmods
 ENV JMODS_URL=https://download2.gluonhq.com/openjfx/${FX_VERSION}/openjfx-${FX_VERSION}_linux-x64_bin-jmods.zip
 

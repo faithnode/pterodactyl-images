@@ -1,4 +1,4 @@
-FROM bitnami/dotnet:5.0.0
+FROM ibm-semeru-runtimes:open-23-jdk
 
 LABEL author="Faithnode"
 LABEL org.opencontainers.image.source="https://github.com/faithnode/pterodactyl-images"

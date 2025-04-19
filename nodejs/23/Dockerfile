@@ -1,4 +1,4 @@
-FROM openjdk:19-bullseye
+FROM node:23-bullseye-slim
 
 LABEL author="Faithnode"
 LABEL org.opencontainers.image.source="https://github.com/faithnode/pterodactyl-images"
@@ -10,14 +10,7 @@ RUN apt update
 RUN xargs apt install -y --no-install-recommends < /packages
 RUN adduser -D -h /home/container container
 
-ENV FX_VERSION=21.0.7
-ENV JMODS_DIR=/usr/share/openjfx/jmods
-ENV JMODS_URL=https://download2.gluonhq.com/openjfx/${FX_VERSION}/openjfx-${FX_VERSION}_linux-x64_bin-jmods.zip
-
-RUN curl -L ${JMODS_URL} -o openjfx.zip
-RUN unzip openjfx.zip && rm openjfx.zip
-RUN mkdir -p ${JMODS_DIR}
-RUN cp javafx-jmods-${FX_VERSION}/* /usr/share/openjfx/jmods
+RUN npm -g install npm@latest || true
 
 USER        container
 ENV         USER=container HOME=/home/container
