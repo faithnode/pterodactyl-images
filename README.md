@@ -234,7 +234,7 @@
     - `ghcr.io/faithnode/pterodactyl-images/dotnet:6.0`
 - [.NET 7.0](https://github.com/faithnode/pterodactyl-images/tree/master/dotnet/7.0)
   - `ghcr.io/faithnode/pterodactyl-images/dotnet:7.0`
-- [.NET 7.0](https://github.com/faithnode/pterodactyl-images/tree/master/dotnet/8.0)
+- [.NET 8.0](https://github.com/faithnode/pterodactyl-images/tree/master/dotnet/8.0)
   - `ghcr.io/faithnode/pterodactyl-images/dotnet:8.0`
 
 ### PHP
