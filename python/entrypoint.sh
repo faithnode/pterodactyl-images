@@ -8,6 +8,8 @@ YELLOW="\033[33m\033[1m"
 INTERNAL_IP=$(ip route get 1 | awk '{print $(NF-2);exit}')
 export INTERNAL_IP
 
+export PATH="${PATH}:/home/container/.local/bin"
+
 python --version
 echo -e '\n'
 
