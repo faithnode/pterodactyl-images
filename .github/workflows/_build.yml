@@ -21,7 +21,7 @@ permissions:
 
 jobs:
   prepare-tags:
-    name: Getting tags
+    name: Collect tags
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.matrix-list.outputs.matrix }}
@@ -55,6 +55,7 @@ jobs:
       matrix:
         tag: ${{fromJson(needs.prepare-tags.outputs.matrix)}}
       fail-fast: false
+      max-parallel: 1
     name: Build ${{ inputs.image }}-${{ matrix.tag }}
     steps:
       - name: Checkout
