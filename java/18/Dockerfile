@@ -1,4 +1,4 @@
-FROM openjdk:18-bullseye
+FROM eclipse-temurin:18-jdk-jammy
 
 LABEL author="Faithnode"
 LABEL org.opencontainers.image.source="https://github.com/faithnode/pterodactyl-images"

@@ -4,8 +4,6 @@
     - `ghcr.io/faithnode/pterodactyl-images/java:8`
 - [Java 11](https://github.com/faithnode/pterodactyl-images/tree/master/java/11)
     - `ghcr.io/faithnode/pterodactyl-images/java:11`
-- [Java 15](https://github.com/faithnode/pterodactyl-images/tree/master/java/15)
-    - `ghcr.io/faithnode/pterodactyl-images/java:15`
 - [Java 16](https://github.com/faithnode/pterodactyl-images/tree/master/java/16)
     - `ghcr.io/faithnode/pterodactyl-images/java:16`
 - [Java 17](https://github.com/faithnode/pterodactyl-images/tree/master/java/17)
@@ -26,31 +24,6 @@
   - `ghcr.io/faithnode/pterodactyl-images/java:24`
 - [Java 25](https://github.com/faithnode/pterodactyl-images/tree/master/java/25)
   - `ghcr.io/faithnode/pterodactyl-images/java:25`
-- [Java 26](https://github.com/faithnode/pterodactyl-images/tree/master/java/26)
-  - `ghcr.io/faithnode/pterodactyl-images/java:26`
-
-### Java Eclipse Temurin
-
-- [Java ET 8](https://github.com/faithnode/pterodactyl-images/tree/master/java-eclipse-temurin/8)
-    - `ghcr.io/faithnode/pterodactyl-images/java-eclipse-temurin:8`
-- [Java ET 11](https://github.com/faithnode/pterodactyl-images/tree/master/java-eclipse-temurin/11)
-    - `ghcr.io/faithnode/pterodactyl-images/java-eclipse-temurin:11`
-- [Java ET 16](https://github.com/faithnode/pterodactyl-images/tree/master/java-eclipse-temurin/16)
-    - `ghcr.io/faithnode/pterodactyl-images/java-eclipse-temurin:16`
-- [Java ET 17](https://github.com/faithnode/pterodactyl-images/tree/master/java-eclipse-temurin/17)
-    - `ghcr.io/faithnode/pterodactyl-images/java-eclipse-temurin:17`
-- [Java ET 18](https://github.com/faithnode/pterodactyl-images/tree/master/java-eclipse-temurin/18)
-    - `ghcr.io/faithnode/pterodactyl-images/java-eclipse-temurin:18`
-- [Java ET 19](https://github.com/faithnode/pterodactyl-images/tree/master/java-eclipse-temurin/19)
-    - `ghcr.io/faithnode/pterodactyl-images/java-eclipse-temurin:19`
-- [Java ET 20](https://github.com/faithnode/pterodactyl-images/tree/master/java-eclipse-temurin/20)
-    - `ghcr.io/faithnode/pterodactyl-images/java-eclipse-temurin:20`
-- [Java ET 21](https://github.com/faithnode/pterodactyl-images/tree/master/java-eclipse-temurin/21)
-    - `ghcr.io/faithnode/pterodactyl-images/java-eclipse-temurin:21`
-- [Java ET 22](https://github.com/faithnode/pterodactyl-images/tree/master/java-eclipse-temurin/22)
-  - `ghcr.io/faithnode/pterodactyl-images/java-eclipse-temurin:22`
-- [Java ET 25](https://github.com/faithnode/pterodactyl-images/tree/master/java-eclipse-temurin/25)
-  - `ghcr.io/faithnode/pterodactyl-images/java-eclipse-temurin:25`
 
 ### Java OpenJ9
 
@@ -83,8 +56,6 @@
 
 - [Java FX 11](https://github.com/faithnode/pterodactyl-images/tree/master/javafx/11)
     - `ghcr.io/faithnode/pterodactyl-images/javafx:11`
-- [Java FX 15](https://github.com/faithnode/pterodactyl-images/tree/master/javafx/15)
-    - `ghcr.io/faithnode/pterodactyl-images/javafx:15`
 - [Java FX 16](https://github.com/faithnode/pterodactyl-images/tree/master/javafx/16)
     - `ghcr.io/faithnode/pterodactyl-images/javafx:16`
 - [Java FX 17](https://github.com/faithnode/pterodactyl-images/tree/master/javafx/17)
@@ -105,8 +76,6 @@
   - `ghcr.io/faithnode/pterodactyl-images/javafx:24`
 - [Java FX 25](https://github.com/faithnode/pterodactyl-images/tree/master/javafx/25)
   - `ghcr.io/faithnode/pterodactyl-images/javafx:25`
-- [Java FX 26](https://github.com/faithnode/pterodactyl-images/tree/master/javafx/26)
-  - `ghcr.io/faithnode/pterodactyl-images/javafx:26`
 
 ### GO
 
