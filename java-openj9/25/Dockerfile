@@ -6,9 +6,13 @@ LABEL org.opencontainers.image.licenses=MIT
 
 COPY ./../packages /packages
 
-RUN apt update
-RUN xargs apt install -y --no-install-recommends < /packages
-RUN adduser -D -h /home/container container
+RUN set -eux; \
+  apt-get update; \
+  grep -vE '^\s*($|#)' /packages | xargs -r apt-get install -y --no-install-recommends; \
+  apt-get install -y --no-install-recommends adduser; \
+  rm -rf /var/lib/apt/lists/*
+
+RUN adduser --disabled-password --gecos "" --home /home/container container
 
 USER        container
 ENV         USER=container HOME=/home/container

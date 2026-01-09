@@ -6,9 +6,21 @@ LABEL org.opencontainers.image.licenses=MIT
 
 COPY ./../packages /packages
 
-RUN apt update
-RUN xargs apt install -y --no-install-recommends < /packages
-RUN adduser -D -h /home/container container
+RUN set -eux; \
+  printf '%s\n' \
+    'deb http://archive.debian.org/debian buster main contrib non-free' \
+    'deb http://archive.debian.org/debian-security buster/updates main contrib non-free' \
+    > /etc/apt/sources.list; \
+  printf '%s\n' \
+    'Acquire::Check-Valid-Until "false";' \
+    'Acquire::AllowInsecureRepositories "true";' \
+    'Acquire::AllowDowngradeToInsecureRepositories "true";' \
+    > /etc/apt/apt.conf.d/99buster-eol; \
+  apt-get -o Acquire::Check-Valid-Until=false update; \
+  xargs -r apt-get install -y --no-install-recommends --allow-unauthenticated < /packages; \
+  rm -rf /var/lib/apt/lists/*
+
+RUN useradd -m -d /home/container container
 
 USER        container
 ENV         USER=container HOME=/home/container

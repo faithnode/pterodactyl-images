@@ -6,9 +6,14 @@ LABEL org.opencontainers.image.licenses=MIT
 
 COPY ./../packages /packages
 
-RUN apt update
-RUN xargs apt install -y --no-install-recommends < /packages
-RUN adduser -D -h /home/container container
+RUN apt-get update \
+ && xargs -r apt-get install -y --no-install-recommends < /packages \
+ && rm -rf /var/lib/apt/lists/*
+
+RUN curl -sS https://getcomposer.org/installer | php -- \
+    --install-dir=/usr/local/bin --filename=composer
+
+RUN useradd -m -d /home/container container
 
 USER        container
 ENV         USER=container HOME=/home/container
