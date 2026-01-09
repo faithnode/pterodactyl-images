@@ -1,4 +1,4 @@
-FROM openjdk:16-bullseye
+FROM eclipse-temurin:16-jdk-focal
 
 LABEL author="Faithnode"
 LABEL org.opencontainers.image.source="https://github.com/faithnode/pterodactyl-images"

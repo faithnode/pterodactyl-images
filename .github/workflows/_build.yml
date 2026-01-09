@@ -15,6 +15,10 @@ on:
         required: false
         default: Dockerfile
 
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: false
+
 permissions:
   actions: read
   packages: write
@@ -59,7 +63,7 @@ jobs:
     name: Build ${{ inputs.image }}-${{ matrix.tag }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup BuildX
         uses: docker/setup-buildx-action@v3
