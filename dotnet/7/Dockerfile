@@ -1,14 +1,18 @@
-FROM bitnami/dotnet:7
+FROM mcr.microsoft.com/dotnet/sdk:7.0-jammy
 
 LABEL author="Faithnode"
 LABEL org.opencontainers.image.source="https://github.com/faithnode/pterodactyl-images"
 LABEL org.opencontainers.image.licenses=MIT
 
+USER root
+
 COPY ./../packages /packages
 
-RUN apt update
-RUN xargs apt install -y --no-install-recommends < /packages
-RUN adduser -D -h /home/container container
+RUN apt-get update \
+ && xargs -r apt-get install -y --no-install-recommends < /packages \
+ && rm -rf /var/lib/apt/lists/*
+
+RUN useradd -m -d /home/container -s /bin/bash container
 
 USER        container
 ENV         USER=container HOME=/home/container
