@@ -8,7 +8,7 @@ COPY ./../packages /packages
 
 RUN apt update
 RUN xargs apt install -y --no-install-recommends < /packages
-RUN adduser -D -h /home/container container
+RUN useradd -M -d /home/container container
 
 USER        container
 ENV         USER=container HOME=/home/container
