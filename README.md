@@ -24,6 +24,8 @@
   - `ghcr.io/faithnode/pterodactyl-images/java:24`
 - [Java 25](https://github.com/faithnode/pterodactyl-images/tree/master/java/25)
   - `ghcr.io/faithnode/pterodactyl-images/java:25`
+- [Java 26](https://github.com/faithnode/pterodactyl-images/tree/master/java/26)
+  - `ghcr.io/faithnode/pterodactyl-images/java:26`
 
 ### Java OpenJ9
 
@@ -51,6 +53,8 @@
   - `ghcr.io/faithnode/pterodactyl-images/java-openj9:24`
 - [OpenJ9 25](https://github.com/faithnode/pterodactyl-images/tree/master/java-openj9/25)
   - `ghcr.io/faithnode/pterodactyl-images/java-openj9:25`
+- [OpenJ9 26](https://github.com/faithnode/pterodactyl-images/tree/master/java-openj9/26)
+  - `ghcr.io/faithnode/pterodactyl-images/java-openj9:26`
 
 ### Java FX
 
@@ -76,6 +80,8 @@
   - `ghcr.io/faithnode/pterodactyl-images/javafx:24`
 - [Java FX 25](https://github.com/faithnode/pterodactyl-images/tree/master/javafx/25)
   - `ghcr.io/faithnode/pterodactyl-images/javafx:25`
+- [Java FX 26](https://github.com/faithnode/pterodactyl-images/tree/master/javafx/26)
+  - `ghcr.io/faithnode/pterodactyl-images/javafx:26`
 
 ### GO
 
@@ -99,6 +105,13 @@
   - `ghcr.io/faithnode/pterodactyl-images/go:1.23`
 - [Go 1.24](https://github.com/faithnode/pterodactyl-images/tree/master/go/1.24)
   - `ghcr.io/faithnode/pterodactyl-images/go:1.24`
+- [Go 1.25](https://github.com/faithnode/pterodactyl-images/tree/master/go/1.25)
+  - `ghcr.io/faithnode/pterodactyl-images/go:1.25`
+- [Go 1.26](https://github.com/faithnode/pterodactyl-images/tree/master/go/1.26)
+  - `ghcr.io/faithnode/pterodactyl-images/go:1.26`
+- [Go 1.27](https://github.com/faithnode/pterodactyl-images/tree/master/go/1.27)
+  - `ghcr.io/faithnode/pterodactyl-images/go:1.27`
+
 
 ### Node JS
 
@@ -126,6 +139,10 @@
   - `ghcr.io/faithnode/pterodactyl-images/nodejs:23`
 - [Node JS 24](https://github.com/faithnode/pterodactyl-images/tree/master/nodejs/24)
   - `ghcr.io/faithnode/pterodactyl-images/nodejs:24`
+- [Node JS 25](https://github.com/faithnode/pterodactyl-images/tree/master/nodejs/25)
+  - `ghcr.io/faithnode/pterodactyl-images/nodejs:25`
+- [Node JS 26](https://github.com/faithnode/pterodactyl-images/tree/master/nodejs/26)
+  - `ghcr.io/faithnode/pterodactyl-images/nodejs:26`
 
 ### Bun
 
@@ -135,6 +152,10 @@
     - `ghcr.io/faithnode/pterodactyl-images/bun:1.1`
 - [Bun 1.2](https://github.com/faithnode/pterodactyl-images/tree/master/bun/1.2)
   - `ghcr.io/faithnode/pterodactyl-images/bun:1.2`
+- [Bun 1.3](https://github.com/faithnode/pterodactyl-images/tree/master/bun/1.3)
+  - `ghcr.io/faithnode/pterodactyl-images/bun:1.3`
+- [Bun 1.4](https://github.com/faithnode/pterodactyl-images/tree/master/bun/1.4)
+  - `ghcr.io/faithnode/pterodactyl-images/bun:1.4`
 
 ### Python
 
@@ -156,6 +177,8 @@
     - `ghcr.io/faithnode/pterodactyl-images/python:3.12`
 - [Python 3.13](https://github.com/faithnode/pterodactyl-images/tree/master/python/3.13)
   - `ghcr.io/faithnode/pterodactyl-images/python:3.13`
+- [Python 3.14](https://github.com/faithnode/pterodactyl-images/tree/master/python/3.14)
+  - `ghcr.io/faithnode/pterodactyl-images/python:3.14`
 
 ### Ruby
 
@@ -205,6 +228,10 @@
   - `ghcr.io/faithnode/pterodactyl-images/dotnet:7.0`
 - [.NET 8.0](https://github.com/faithnode/pterodactyl-images/tree/master/dotnet/8.0)
   - `ghcr.io/faithnode/pterodactyl-images/dotnet:8.0`
+- [.NET 9.0](https://github.com/faithnode/pterodactyl-images/tree/master/dotnet/9.0)
+  - `ghcr.io/faithnode/pterodactyl-images/dotnet:9.0`
+- [.NET 10.0](https://github.com/faithnode/pterodactyl-images/tree/master/dotnet/10.0)
+  - `ghcr.io/faithnode/pterodactyl-images/dotnet:10.0`
 
 ### PHP
 
@@ -224,3 +251,5 @@
   - `ghcr.io/faithnode/pterodactyl-images/php:8.3`
 - [PHP 8.4](https://github.com/faithnode/pterodactyl-images/tree/master/php/8.4)
   - `ghcr.io/faithnode/pterodactyl-images/php:8.4`
+- [PHP 8.5](https://github.com/faithnode/pterodactyl-images/tree/master/php/8.5)
+  - `ghcr.io/faithnode/pterodactyl-images/php:8.5`
