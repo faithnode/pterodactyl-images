@@ -2,15 +2,15 @@
 
 - Забилдить все: 
 
-  make build-all -j
+  `make build-all -j`
 
 - Билдить все версии конкретной технологии:
 
-  make go -j
+  `make go -j`
 
 - Билдить строго одну определенную версию:
 
-  make dotnet–9
+  `make dotnet–9`
 
 ### Java
 
