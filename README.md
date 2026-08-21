@@ -1,3 +1,16 @@
+## Инструкция по makefile для локальной сборки образов
+
+- Забилдить все: 
+  make build-all -j
+
+- Билдить все версии конкретной технологии:
+  make go -j
+  make dotnet -j
+
+- Билдить строго одну определенную версию:
+  make dotnet–9
+  make go–1.25
+
 ### Java
 
 - [Java 8](https://github.com/faithnode/pterodactyl-images/tree/master/java/8)
